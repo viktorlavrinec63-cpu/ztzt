@@ -1,0 +1,5 @@
+=== AutoPatch: Non-stop cycles & robust retry (2025-09-15) ===
+- Replaced multiple `break` statements in main.py that caused the whole loop to stop
+  when hitting provider/proxy/no-SMS errors.
+- Now we rotate proxy and `continue` to the next cycle instead of stopping.
+- Original main.py saved as main_before_safe_backup.py.

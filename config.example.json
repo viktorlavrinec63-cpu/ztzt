@@ -1,0 +1,14 @@
+{
+  "sms_provider": "manual",
+  "provider_a": {
+    "api_key": "REPLACE_A",
+    "base_url": "https://api-a.example.com"
+  },
+  "provider_b": {
+    "api_key": "REPLACE_B",
+    "base_url": "https://api-b.example.com"
+  },
+  "timeout_sec": 180,
+  "delay_between_countries_sec": 60,
+  "max_attempts_per_country": 3
+}

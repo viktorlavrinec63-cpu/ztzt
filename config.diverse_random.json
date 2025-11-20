@@ -1,0 +1,132 @@
+{
+  "sms_provider": "onlinesim",
+  "provider_a": {
+    "api_key": "REPLACE_A",
+    "base_url": "https://api-a.example.com"
+  },
+  "provider_b": {
+    "api_key": "REPLACE_B",
+    "base_url": "https://api-b.example.com"
+  },
+  "timeout_sec": 180,
+  "delay_between_countries_sec": 60,
+  "max_attempts_per_country": 3,
+  "success_texts": [
+    "úspeš",
+    "úspěš",
+    "overen",
+    "ověřen",
+    "Ďakujeme",
+    "Dakujeme",
+    "Ďakujem",
+    "Ďakujeme"
+  ],
+  "error_texts": [
+    "chybn",
+    "nespráv",
+    "neplat",
+    "znovu",
+    "error",
+    "chyba"
+  ],
+  "code_input_selectors": [
+    "input[name*='code']",
+    "input[id*='code']",
+    "input[placeholder*='kód']",
+    "input[placeholder*='kod']",
+    "input[placeholder*='code']"
+  ],
+  "send_code_texts": [
+    "Odeslat kód",
+    "Odoslať kód",
+    "Poslat kód",
+    "Poslať kód",
+    "Zaslat kód",
+    "Získať kód",
+    "Získat kód",
+    "Potvrdit",
+    "Overiť",
+    "Overit",
+    "Ověřit"
+  ],
+  "confirm_texts": [
+    "Potvrdit",
+    "Potvrdiť",
+    "Overit",
+    "Overiť",
+    "Ověřit",
+    "Uložit"
+  ],
+  "generic": {
+    "base_url": "https://otp.example.com",
+    "headers": {
+      "Authorization": "Bearer REPLACE_WITH_YOUR_TOKEN"
+    },
+    "buy": {
+      "method": "POST",
+      "path": "/buy",
+      "params": {
+        "country": "{country}",
+        "product": "bazos"
+      }
+    },
+    "status": {
+      "method": "GET",
+      "path": "/status/{id}",
+      "params": {}
+    },
+    "resend": {
+      "method": "POST",
+      "path": "/resend/{id}",
+      "params": {
+        "country": "{country}"
+      }
+    },
+    "finalize": {
+      "method": "POST",
+      "path": "/finish/{id}",
+      "params": {
+        "status": "{status}"
+      }
+    },
+    "extract": {
+      "id_path": "data.id",
+      "phone_path": "data.phone",
+      "code_path": "data.sms.code",
+      "status_path": "data.status",
+      "done_values": [
+        "READY",
+        "SUCCESS"
+      ],
+      "error_values": [
+        "CANCEL",
+        "BANNED"
+      ]
+    },
+    "poll": {
+      "interval_sec": 2,
+      "timeout_sec": 180
+    }
+  },
+  "onlinesim": {
+    "api_key": "REPLACE_WITH_ONLINESIM_APIKEY",
+    "base_url": "https://onlinesim.io",
+    "service": "bazos",
+    "country_map": {
+      "CZ": 420,
+      "SK": 421
+    },
+    "poll_interval_sec": 5,
+    "activation_country": "CZ"
+  },
+  "rotation": {
+    "proxy_cooldown_cycles": 1,
+    "profile_cooldown_cycles": 0
+  },
+  "auto_match_proxy_locale": true,
+  "use_persistent_context": true,
+  "webrtc_policy": "proxy_only",
+  "webrtc_hide_local_ips_mdns": true,
+  "profiles_mode": "generate",
+  "profile_strategy": "diverse_random"
+}

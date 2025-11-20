@@ -1,0 +1,38 @@
+// background.js — uses Native Messaging (no TCP ports)
+let nmPort = null;
+
+function ensurePort() {
+  if (nmPort) return nmPort;
+  // IMPORTANT: replace with your host name from manifest: com.bazos.bridge
+  nmPort = chrome.runtime.connectNative('com.bazos.bridge');
+  nmPort.onMessage.addListener((msg) => {
+    // forward to content-script
+    if (msg && msg.action) {
+      forwardToContent(msg);
+    }
+  });
+  nmPort.onDisconnect.addListener(() => {
+    nmPort = null;
+  });
+  return nmPort;
+}
+
+async function forwardToContent(cmd) {
+  let [tab] = await chrome.tabs.query({ url: "*://2nd-no.com/*" });
+  if (!tab) tab = await chrome.tabs.create({ url: "https://2nd-no.com/auth/login" });
+  await new Promise(r => setTimeout(r, 800));
+  return await new Promise((resolve) => {
+    chrome.tabs.sendMessage(tab.id, cmd, (resp) => resolve(resp));
+  });
+}
+
+// For demo: when content_script says "ready", ask host what to do.
+chrome.runtime.onMessage.addListener((msg, sender, sendResponse) => {
+  if (msg && msg.event === "pageReady") {
+    ensurePort(); // start host
+    // notify host that page is ready
+    nmPort && nmPort.postMessage({ event: "pageReady" });
+    sendResponse({ ok: true });
+  }
+  return true;
+});

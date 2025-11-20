@@ -1,0 +1,9 @@
+{
+  "name": "com.bazos.bridge",
+  "description": "SecondNo Native Messaging bridge",
+  "path": "C:\Users\danto\OneDrive\Desktop\BazosAutoReg_Windo2232ws\native_host\host_run.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://bemipdadipncjpbmmhpiddjebmgjiaob/"
+  ]
+}

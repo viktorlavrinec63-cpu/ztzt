@@ -1,0 +1,49 @@
+{
+  "popupItem": [
+    "[data-testid='snackbar'] a[href*='/messages/']",
+    ".snackbar a[href*='/messages/']",
+    "a[href*='/messages/']"
+  ],
+  "threadListContainer": [
+    ".message-list",
+    "[class*='message-list']",
+    "[data-testid='message-list']",
+    "[class*='thread-list']"
+  ],
+  "threadListItem": [
+    "button.thread-element-wrapper",
+    "button[class*='thread-element-wrapper']",
+    "[class*='thread-element-wrapper']"
+  ],
+  "threadUnreadBadge": [
+    ".thread-element-wrapper .blue",
+    "[class*='unread']",
+    ".thread-element-wrapper [class*='badge']"
+  ],
+  "messageContainer": [
+    ".message-list",
+    "[data-testid='message-list']",
+    "#messages"
+  ],
+  "threadCodeLine": [
+    "[data-testid='message-row']:last-child",
+    ".message-list .message-row:last-child",
+    ".message:last-child"
+  ],
+  "kebabInThread": [
+    "button.dropdown-menu.thread-options",
+    "[class*='thread-options']",
+    "[aria-label='More']",
+    "button[aria-haspopup='menu']"
+  ],
+  "menuDelete": [
+    "li[role='menuitem']:has-text('Delete thread')",
+    "li[role='menuitem']:has-text('Удалить диалог')",
+    "button:has-text('Delete thread'), button:has-text('Удалить диалог')"
+  ],
+  "confirmDelete": [
+    "button:has-text('Delete'), button:has-text('Удалить')",
+    "[data-testid='confirm'] button"
+  ],
+  "codeRegex": "(?:^|\\D)(\\d{4,8})(?:\\D|$)"
+}

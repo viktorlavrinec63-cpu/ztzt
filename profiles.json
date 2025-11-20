@@ -1,0 +1,82 @@
+[
+  {
+    "name": "CZ-Desktop-1080p",
+    "locale": "cs-CZ",
+    "timezoneId": "Europe/Prague",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "deviceScaleFactor": 1.0
+    },
+    "colorScheme": "light",
+    "acceptLanguage": "cs-CZ,q=0.9",
+    "geolocation": {
+      "latitude": 50.0755,
+      "longitude": 14.4378,
+      "accuracy": 50
+    },
+    "webgl_vendor": "Google Inc. (Intel)",
+    "webgl_renderer": "ANGLE (Intel, Intel UHD Graphics 630)"
+  },
+  {
+    "name": "SK-Desktop-900p",
+    "locale": "sk-SK",
+    "timezoneId": "Europe/Bratislava",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900,
+      "deviceScaleFactor": 1.0
+    },
+    "colorScheme": "light",
+    "acceptLanguage": "sk-SK,q=0.9",
+    "geolocation": {
+      "latitude": 48.1486,
+      "longitude": 17.1077,
+      "accuracy": 50
+    },
+    "webgl_vendor": "Google Inc. (Intel)",
+    "webgl_renderer": "ANGLE (Intel, Intel UHD Graphics 630)"
+  },
+  {
+    "name": "CZ-Laptop-768p",
+    "locale": "cs-CZ",
+    "timezoneId": "Europe/Prague",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "deviceScaleFactor": 1.0
+    },
+    "colorScheme": "dark",
+    "acceptLanguage": "cs-CZ,q=0.9",
+    "geolocation": {
+      "latitude": 50.0755,
+      "longitude": 14.4378,
+      "accuracy": 50
+    },
+    "webgl_vendor": "Google Inc. (Intel)",
+    "webgl_renderer": "ANGLE (Intel, Intel UHD Graphics 630)"
+  },
+  {
+    "name": "SK-Laptop-800p",
+    "locale": "sk-SK",
+    "timezoneId": "Europe/Bratislava",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+    "viewport": {
+      "width": 1280,
+      "height": 800,
+      "deviceScaleFactor": 1.0
+    },
+    "colorScheme": "light",
+    "acceptLanguage": "sk-SK,q=0.9",
+    "geolocation": {
+      "latitude": 48.1486,
+      "longitude": 17.1077,
+      "accuracy": 50
+    },
+    "webgl_vendor": "Google Inc. (Intel)",
+    "webgl_renderer": "ANGLE (Intel, Intel UHD Graphics 630)"
+  }
+]

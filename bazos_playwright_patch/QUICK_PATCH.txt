@@ -1,0 +1,24 @@
+
+# QUICK_PATCH: Example snippet to insert into bazos_bot.py or main.py
+# (Replace the original browser/session creation with this block)
+
+from bazos_playwright_patch.browser_setup import launch_context_from_profile, close_all
+from bazos_playwright_patch.ua_manager import generate_profile
+
+# generate profile and launch
+profile = generate_profile("bazos_playwright_patch/user_agents.txt")
+p, browser, context, page = launch_context_from_profile(profile, headless=False)
+
+try:
+    page.goto("https://www.bazos.cz", timeout=60000)
+    # ... your existing interaction logic here, for example:
+    # page.fill("input[name='email']", "example@example.com")
+    # page.fill("input[name='phone']", "+420123456789")
+    # page.click("button[type='submit']")
+    # after submitting, poll for SMS via your sms_providers module and then enter code:
+    # page.fill("input[name='code']", sms_code)
+    # page.click("button.confirm")
+    # optionally save storage state:
+    context.storage_state(path="bazos_state.json")
+finally:
+    close_all(p, browser, context)

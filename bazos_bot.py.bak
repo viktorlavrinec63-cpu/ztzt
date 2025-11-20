@@ -1,0 +1,347 @@
+# bazos_bot.py
+from __future__ import annotations
+import os, time, re, json, pathlib, datetime, random
+from typing import List, Optional, Dict, Any, Tuple
+from playwright.sync_api import sync_playwright, Page, BrowserContext
+import json
+
+
+def load_runtime_config() -> dict:
+    try:
+        with open("config.json", "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+COOKIE_BUTTON_TEXTS = ["Souhlasím","Přijmout","Rozumím","Povolit vše","Súhlasím","Prijať","Rozumiem","Povoliť všetko"]
+SEND_CODE_TEXTS   = None
+CONFIRM_TEXTS     = None
+ERROR_WORDS       = None
+SUCCESS_WORDS     = None
+
+
+def _any_contains(text: str, substrings: List[str]) -> bool:
+    t = (text or "").strip().lower()
+    return any(s.lower() in t for s in substrings)
+
+def click_cookie_banner(page: Page, timeout_ms: int = 6000) -> bool:
+    end = time.time() + (timeout_ms / 1000)
+    clicked = False
+    while time.time() < end and not clicked:
+        for sel in ["button", "input[type=button]", "input[type=submit]", "a", "[role='button']"]:
+            for el in page.query_selector_all(sel):
+                try:
+                    txt = (el.inner_text() or el.get_attribute("value") or "").strip()
+                    if txt and _any_contains(txt, COOKIE_BUTTON_TEXTS):
+                        el.click(timeout=500)
+                        clicked = True
+                        break
+                except Exception:
+                    pass
+            if clicked: break
+        if not clicked: page.wait_for_timeout(300)
+    return clicked
+
+def ensure_home(page: Page, country: str):
+    base = "https://www.bazos.sk/" if country=="SK" else "https://www.bazos.cz/"
+    page.goto((base, cfg), wait_until="domcontentloaded")
+    click_cookie_banner(page)
+
+def open_random_category(page: Page, country: str) -> None:
+    ensure_home(page, country)
+    # Выбрать любую ссылку категории (грубая эвристика: ссылки внутри левого меню / корня, без 'inzerat')
+    links = [a for a in page.query_selector_all("a[href]")]
+    candidates = []
+    for a in links:
+        try:
+            href = a.get_attribute("href") or ""
+            if not href.startswith("http"): continue
+            if "bazos." not in href: continue
+            if "inzerat" in href: continue
+            if href.count("/") < 4:  # что-то вроде категории
+                candidates.append(href)
+        except Exception:
+            pass
+    if not candidates:
+        # fallback: остаёмся на главной
+        return
+    target = random.choice(candidates)
+    page.goto((target, cfg), wait_until="domcontentloaded")
+    click_cookie_banner(page)
+
+def open_random_listing(page: Page) -> bool:
+    # Ищем любые ссылки с "inzerat" (деталка объявлений)
+    links = [a for a in page.query_selector_all("a[href*='inzerat']")]
+    if not links:
+        # иногда списки подгружаются; небольшая пауза и повтор
+        page.wait_for_timeout(1000)
+        links = [a for a in page.query_selector_all("a[href*='inzerat']")]
+    if not links: return False
+    target = random.choice(links).get_attribute("href")
+    if target:
+        page.goto((target, cfg), wait_until="domcontentloaded")
+        click_cookie_banner(page)
+        return True
+    return False
+
+def find_phone_input(page: Page):
+    el = page.query_selector("input[type=tel]")
+    if el: return el
+    for sel in ["input[name*='tel']", "input[id*='tel']", "input[name*='phone']", "input[id*='phone']",
+                "input[placeholder*='tel']", "input[placeholder*='Telefon']", "input[placeholder*='telef']"]:
+        el = page.query_selector(sel)
+        if el: return el
+    return None
+
+def find_code_input(page: Page):
+        cfg = load_runtime_config()
+        sels = cfg.get("code_input_selectors") or ["input[name*='code']","input[id*='code']","input[placeholder*='kód']","input[placeholder*='kod']","input[placeholder*='code']"]
+        for sel in sels:
+        el = page.query_selector(sel)
+        if el: return el
+        return None
+
+        def click_button_with_text(page: Page, texts: List[str]) -> bool:
+        for sel in ["button", "input[type=button]", "input[type=submit]", "[role='button']"]:
+        for b in page.query_selector_all(sel):
+        try:
+        txt = (b.inner_text() or b.get_attribute("value") or "").strip()
+        if txt and _any_contains(txt, texts):
+        b.click(timeout=1000)
+        return True
+        except Exception:
+        pass
+        return False
+
+
+        def _capture_canvas_fp(page: Page) -> str:
+        """
+        Считывает Canvas fingerprint (hash от dataURL) без каких-либо вмешательств.
+        Это используется ТОЛЬКО для логирования, не для подмены.
+        """
+        try:
+        data = page.evaluate("""() => {
+        try {
+        const c = document.createElement('canvas');
+        c.width = 240; c.height = 80;
+        const ctx = c.getContext('2d');
+        ctx.textBaseline = 'top';
+        ctx.font = '16px Arial';
+        ctx.fillStyle = '#f60';
+        ctx.fillRect(125,1,62,20);
+        ctx.fillStyle = '#069';
+        ctx.fillText('Cwm fjordbank glyphs vext quiz', 2, 15);
+        ctx.strokeStyle = '#ff0';
+        ctx.arc(40, 40, 30, 0, Math.PI*2, true);
+        ctx.stroke();
+        return c.toDataURL();
+        } catch (e) { return 'error:' + e; }
+        }""")
+        except Exception as e:
+        data = 'error:' + str(e)
+        import hashlib
+        try:
+        return hashlib.sha256(data.encode('utf-8', 'ignore')).hexdigest()
+        except Exception:
+        return 'error-hash'
+
+
+        def wait_success_or_error(page: Page, code_input_selector: str, timeout_ms: int = 8000) -> Tuple[bool, bool]:
+        """
+        Возвращает (is_success, is_error)
+        Успех = поле кода исчезло И нет ошибок в тексте.
+        Ошибка = появились слова из ERROR_WORDS.
+        """
+        end = time.time() + timeout_ms/1000.0
+        is_error = False
+        while time.time() < end:
+        # ищем тексты ошибок
+        body_txt = (page.inner_text("body") or "").lower()
+        if _any_contains(body_txt, ERROR_WORDS):
+        is_error = True
+        break
+        # если поле кода исчезло — вероятный успех
+        try:
+        el = page.query_selector(code_input_selector)
+        if not el:
+        # двойная проверка через секунду
+        page.wait_for_timeout(800)
+        el2 = page.query_selector(code_input_selector)
+        if not el2:
+        return True, False
+        except Exception:
+        pass
+        page.wait_for_timeout(500)
+        # если истёк таймер и явных ошибок нет — best effort: считаем успехом, если поле исчезло
+        try:
+        if not page.query_selector(code_input_selector) and not is_error:
+        return True, False
+        except Exception:
+        pass
+        return False, is_error
+
+        def save_cookies_txt(context: BrowserContext, folder: str, country: str) -> str:
+        os.makedirs(folder, exist_ok=True)
+        cookies = context.cookies()
+        lines = []
+        for c in cookies:
+        parts = [
+        f"name={c.get('name','')}", f"value={c.get('value','')}",
+        f"domain={c.get('domain','')}", f"path={c.get('path','/')}",
+        f"secure={str(c.get('secure', False)).lower()}",
+        f"httpOnly={str(c.get('httpOnly', False)).lower()}",
+        f"sameSite={c.get('sameSite','')}", f"expirationDate={c.get('expires','')}",
+        ]
+        lines.append("; ".join(parts))
+        stamp = datetime.datetime.utcnow().isoformat().replace(":", "-").replace(".", "-")
+        filename = os.path.join(folder, f"cookies-{country}-{stamp}.txt")
+        with open(filename, "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+        return filename
+
+        def run_country_flow(country: str, phone: str, get_code, headless: bool, proxy: Optional[str], profile: dict | None = None, cycle_index: int | None = None) -> Tuple[bool, str]:
+        out_cookie_file = ""
+        from playwright.sync_api import sync_playwright
+        cfg = load_runtime_config()
+        global SEND_CODE_TEXTS, CONFIRM_TEXTS, ERROR_WORDS, SUCCESS_WORDS
+        SEND_CODE_TEXTS = cfg.get("send_code_texts") or ["Odeslat kód","Odoslať kód","Poslat kód","Poslať kód","Zaslat kód","Získať kód","Získat kód","Potvrdit","Overiť","Overit","Ověřit"]
+        CONFIRM_TEXTS   = cfg.get("confirm_texts") or ["Potvrdit","Potvrdiť","Overit","Overiť","Ověřit","Uložit"]
+        ERROR_WORDS     = cfg.get("error_texts") or ["chybn","nespráv","neplat","znovu","error","chyba"]
+        SUCCESS_WORDS   = cfg.get("success_texts") or ["úspěš","úspeš","overen","ověřen","ďakujem","dakujem"]
+        CODE_INPUT_SELECTORS = cfg.get("code_input_selectors") or ["input[name*='code']","input[id*='code']","input[placeholder*='kód']","input[placeholder*='kod']","input[placeholder*='code']"]
+        with sync_playwright() as pw:
+        launch_args = {"headless": headless}
+        if proxy:
+            launch_args["proxy"] = {"server": proxy}
+        browser = pw.chromium.launch(**launch_args)
+        context = browser.new_context(
+            locale=(profile.get('locale') if profile else ("cs-CZ" if country=="CZ" else "sk-SK")),
+            timezone_id=(profile.get('timezoneId') if profile else ("Europe/Prague" if country=="CZ" else "Europe/Bratislava")),
+            user_agent=(profile.get('userAgent') if profile else None),
+            viewport_size=(profile.get('viewport') if profile else None),
+            color_scheme=(profile.get('colorScheme') if profile else None)
+        )
+        page = context.new_page()
+        None
+
+        try:
+            if profile and profile.get("acceptLanguage"):
+                context.set_extra_http_headers({"Accept-Language": profile["acceptLanguage"]})
+        except Exception:
+            pass
+        try:
+            if profile and profile.get("geolocation"):
+                context.grant_permissions(["geolocation"], origin=("https://www.bazos.sk" if country=="SK" else "https://www.bazos.cz"))
+                context.set_geolocation(profile["geolocation"])
+        except Exception:
+            pass
+
+        try:
+            open_random_category(page, country)
+            ok_listing = open_random_listing(page)
+            if not ok_listing:
+                # если не нашли объявление, остаёмся в категории
+                pass
+
+            # ввод телефона
+            phone_input = find_phone_input(page)
+            if not phone_input:
+                for _ in range(10):
+                    page.wait_for_timeout(500)
+                    phone_input = find_phone_input(page)
+                    if phone_input: break
+            if not phone_input:
+                print(f"[{country}] Не найдено поле телефона")
+                out_cookie_file = save_cookies_txt(context, os.path.join(os.getcwd(), "BazosCookies", country), country)
+            # Log canvas fingerprint (hash) for QA
+            try:
+                fp_hash = _capture_canvas_fp(page)
+                import csv
+                os.makedirs('QA', exist_ok=True)
+                with open(os.path.join('QA','fingerprints.csv'), 'a', newline='', encoding='utf-8') as fpf:
+                    w = csv.writer(fpf)
+                    w.writerow([cycle_index, country, profile.get('locale') if profile else None, profile.get('timezoneId') if profile else None, profile.get('userAgent') if profile else None, fp_hash])
+            except Exception:
+                pass
+                return False, out_cookie_file
+
+            phone_input.fill(phone, timeout=5000)
+
+            # отправка кода
+            if not click_button_with_text(page, SEND_CODE_TEXTS):
+                print(f"[{country}] Кнопка 'отправить код' не найдена — продолжаю")
+
+            # получение кода и подтверждение (с повторами)
+            attempts = 0
+            max_attempts = 3
+            success = False
+            saved_error = False
+            while attempts < max_attempts and not success:
+                attempts += 1
+                code = get_code()
+                code_input = find_code_input(page)
+                if not code_input:
+                    for _ in range(10):
+                        page.wait_for_timeout(500)
+                        code_input = find_code_input(page)
+                        if code_input: break
+                if not code_input:
+                    print(f"[{country}] Поле кода не найдено")
+                    break
+                code_input.fill(code, timeout=5000)
+                # нажать подтверждение
+                click_button_with_text(page, CONFIRM_TEXTS)
+                is_success, is_error = wait_success_or_error(page, "input[name*='code'], input[id*='code']", 8000)
+                if is_success:
+                    success = True
+                    break
+                if is_error:
+                    saved_error = True
+                    print(f"[{country}] Ошибка кода. Ждём 60 секунд и перезагружаем...")
+                    page.wait_for_timeout(60000)  # 60s
+                    page.reload(wait_until="domcontentloaded")
+                    click_cookie_banner(page)
+                    # вернуться к вводу телефона если нужно
+                    phone_input = find_phone_input(page)
+                    if phone_input:
+                        phone_input.fill(phone)
+                        click_button_with_text(page, SEND_CODE_TEXTS)
+                else:
+                    # непонятный статус — небольшой retry
+                    page.wait_for_timeout(3000)
+
+            out_cookie_file = save_cookies_txt(context, os.path.join(os.getcwd(), "BazosCookies", country), country)
+            # Log canvas fingerprint (hash) for QA
+            try:
+                fp_hash = _capture_canvas_fp(page)
+                import csv
+                os.makedirs('QA', exist_ok=True)
+                with open(os.path.join('QA','fingerprints.csv'), 'a', newline='', encoding='utf-8') as fpf:
+                    w = csv.writer(fpf)
+                    w.writerow([cycle_index, country, profile.get('locale') if profile else None, profile.get('timezoneId') if profile else None, profile.get('userAgent') if profile else None, fp_hash])
+            except Exception:
+                pass
+
+            # Save storage state & fingerprint snapshot
+            os.makedirs(os.path.join(os.getcwd(), "StorageStates", country), exist_ok=True)
+            ss_path = os.path.join(os.getcwd(), "StorageStates", country, f"storage-{country}-{cycle_index or 0}.json")
+            context.storage_state(path=ss_path)
+            fp = {
+                "country": country,
+                "cycle_index": cycle_index,
+                "locale": profile.get("locale") if profile else None,
+                "timezoneId": profile.get("timezoneId") if profile else None,
+                "userAgent": profile.get("userAgent") if profile else None,
+                "viewport": profile.get("viewport") if profile else None,
+                "colorScheme": profile.get("colorScheme") if profile else None
+            }
+            with open(os.path.join(os.getcwd(), "StorageStates", country, f"fingerprint-{country}-{cycle_index or 0}.json"), "w", encoding="utf-8") as fpf:
+                json.dump(fp, fpf, ensure_ascii=False, indent=2)
+
+            return success, out_cookie_file
+        finally:
+            context.close()
+            try:
+                browser.close()
+            except Exception:
+                pass

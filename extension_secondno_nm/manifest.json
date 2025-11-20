@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "SecondNo Bridge (Native Messaging)",
+  "version": "1.0.0",
+  "description": "Opens 2nd-no.com and fills login via Native Messaging (no localhost ports).",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "activeTab",
+    "nativeMessaging"
+  ],
+  "host_permissions": [
+    "https://2nd-no.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://2nd-no.com/*"
+      ],
+      "js": [
+        "content_script.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

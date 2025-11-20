@@ -1,0 +1,3802 @@
+[
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.4904.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Segoe UI",
+      "Georgia",
+      "Courier New",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.3482.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 800,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Arial",
+      "Times New Roman",
+      "Tahoma",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2701.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Arial",
+      "Helvetica",
+      "Georgia",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6561.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Roboto",
+      "Times New Roman",
+      "Verdana",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6001.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Segoe UI",
+      "Courier New",
+      "Verdana",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Helvetica",
+      "Times New Roman",
+      "Arial",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.1285.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Tahoma",
+      "Roboto",
+      "Helvetica",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; SM-G984B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.1835.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Tahoma",
+      "Segoe UI",
+      "Georgia",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.1103.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 800,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Times New Roman",
+      "Courier New",
+      "Arial",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; SM-G989B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.593.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Times New Roman",
+      "Segoe UI",
+      "Courier New",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.6464.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 768,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Tahoma",
+      "Arial",
+      "Courier New",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6561.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Roboto",
+      "Tahoma",
+      "Segoe UI",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; SM-G989B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.593.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Courier New",
+      "Georgia",
+      "Arial",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G987B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.6740.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Courier New",
+      "Times New Roman",
+      "Arial",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "viewport": {
+      "width": 1440,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Segoe UI",
+      "Tahoma",
+      "Georgia",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.791.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Arial",
+      "Verdana",
+      "Times New Roman",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.1950.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 800,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Arial",
+      "Segoe UI",
+      "Georgia",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1440,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Georgia",
+      "Segoe UI",
+      "Roboto",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.791.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Segoe UI",
+      "Times New Roman",
+      "Verdana",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Helvetica",
+      "Segoe UI",
+      "Tahoma",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.4644.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Arial",
+      "Roboto",
+      "Tahoma",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Tahoma",
+      "Arial",
+      "Georgia",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.4904.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1200,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Roboto",
+      "Verdana",
+      "Helvetica",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; SM-G973B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.3937.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Segoe UI",
+      "Tahoma",
+      "Georgia",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G979B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2292.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Times New Roman",
+      "Roboto",
+      "Georgia",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.560.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 800,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Georgia",
+      "Courier New",
+      "Verdana",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2246.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Roboto",
+      "Helvetica",
+      "Times New Roman",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.1103.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Verdana",
+      "Helvetica",
+      "Arial",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6561.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Verdana",
+      "Times New Roman",
+      "Georgia",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.560.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Courier New",
+      "Segoe UI",
+      "Helvetica",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.1103.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Times New Roman",
+      "Helvetica",
+      "Segoe UI",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Helvetica",
+      "Georgia",
+      "Segoe UI",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; SM-G970B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.2025.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Times New Roman",
+      "Courier New",
+      "Roboto",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.3817.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Arial",
+      "Times New Roman",
+      "Roboto",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2947.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Arial",
+      "Tahoma",
+      "Georgia",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.4448.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Times New Roman",
+      "Segoe UI",
+      "Roboto",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 14_1) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Safari/605.1.15",
+    "viewport": {
+      "width": 1366,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Georgia",
+      "Segoe UI",
+      "Helvetica",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G996B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.5923.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Arial",
+      "Times New Roman",
+      "Verdana",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2863.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Times New Roman",
+      "Courier New",
+      "Tahoma",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Georgia",
+      "Verdana",
+      "Tahoma",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G971B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.4169.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 768,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Courier New",
+      "Tahoma",
+      "Verdana",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Arial",
+      "Times New Roman",
+      "Courier New",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.4644.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Helvetica",
+      "Georgia",
+      "Tahoma",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Segoe UI",
+      "Georgia",
+      "Times New Roman",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0",
+    "viewport": {
+      "width": 1920,
+      "height": 768,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Courier New",
+      "Helvetica",
+      "Verdana",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5244.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1200,
+      "deviceScaleFactor": 3
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Georgia",
+      "Roboto",
+      "Arial",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2138.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Georgia",
+      "Segoe UI",
+      "Times New Roman",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 768,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Arial",
+      "Tahoma",
+      "Helvetica",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6068.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Times New Roman",
+      "Arial",
+      "Segoe UI",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.4904.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1200,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Helvetica",
+      "Courier New",
+      "Tahoma",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.4904.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Verdana",
+      "Tahoma",
+      "Arial",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Verdana",
+      "Arial",
+      "Segoe UI",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2283.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Times New Roman",
+      "Roboto",
+      "Arial",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.6475.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Segoe UI",
+      "Roboto",
+      "Georgia",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6068.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Helvetica",
+      "Times New Roman",
+      "Arial",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.3688.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Helvetica",
+      "Georgia",
+      "Courier New",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 6,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Arial",
+      "Courier New",
+      "Tahoma",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.3831.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 800,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Segoe UI",
+      "Verdana",
+      "Georgia",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G999B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.596.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Arial",
+      "Segoe UI",
+      "Roboto",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.3482.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1200,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Courier New",
+      "Arial",
+      "Roboto",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.6475.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Tahoma",
+      "Roboto",
+      "Helvetica",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Arial",
+      "Roboto",
+      "Segoe UI",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Times New Roman",
+      "Tahoma",
+      "Arial",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Verdana",
+      "Segoe UI",
+      "Georgia",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G999B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.596.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Helvetica",
+      "Segoe UI",
+      "Times New Roman",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Verdana",
+      "Tahoma",
+      "Georgia",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1920,
+      "height": 1200,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Courier New",
+      "Helvetica",
+      "Verdana",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 6,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Segoe UI",
+      "Helvetica",
+      "Arial",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.6706.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Tahoma",
+      "Times New Roman",
+      "Roboto",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2696.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Segoe UI",
+      "Tahoma",
+      "Arial",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G999B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6858.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 800,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Roboto",
+      "Times New Roman",
+      "Arial",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Times New Roman",
+      "Tahoma",
+      "Helvetica",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2246.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1200,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Roboto",
+      "Georgia",
+      "Segoe UI",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G997B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.4810.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 6,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Times New Roman",
+      "Roboto",
+      "Georgia",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Verdana",
+      "Tahoma",
+      "Courier New",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Arial",
+      "Georgia",
+      "Verdana",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; SM-G989B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.593.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Segoe UI",
+      "Arial",
+      "Georgia",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Helvetica",
+      "Tahoma",
+      "Arial",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.3482.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Segoe UI",
+      "Helvetica",
+      "Tahoma",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Segoe UI",
+      "Arial",
+      "Roboto",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Arial",
+      "Verdana",
+      "Tahoma",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0",
+    "viewport": {
+      "width": 1600,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Courier New",
+      "Segoe UI",
+      "Georgia",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 800,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Courier New",
+      "Helvetica",
+      "Tahoma",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G971B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.4169.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 768,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Roboto",
+      "Segoe UI",
+      "Verdana",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.791.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Segoe UI",
+      "Times New Roman",
+      "Tahoma",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6068.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 800,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Courier New",
+      "Roboto",
+      "Helvetica",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Verdana",
+      "Arial",
+      "Segoe UI",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G976B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.1900.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 6,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Verdana",
+      "Courier New",
+      "Roboto",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2283.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Times New Roman",
+      "Arial",
+      "Verdana",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6001.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 768,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Arial",
+      "Helvetica",
+      "Roboto",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2405.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Tahoma",
+      "Courier New",
+      "Georgia",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5437.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Georgia",
+      "Segoe UI",
+      "Helvetica",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 800,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Tahoma",
+      "Georgia",
+      "Arial",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2246.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Tahoma",
+      "Helvetica",
+      "Times New Roman",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 12; SM-G976B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.5779.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Verdana",
+      "Helvetica",
+      "Arial",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Times New Roman",
+      "Georgia",
+      "Courier New",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.1608.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Helvetica",
+      "Tahoma",
+      "Segoe UI",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; SM-G973B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.3937.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Tahoma",
+      "Georgia",
+      "Roboto",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Times New Roman",
+      "Tahoma",
+      "Roboto",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.3286.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Verdana",
+      "Helvetica",
+      "Georgia",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6068.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Georgia",
+      "Segoe UI",
+      "Verdana",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Times New Roman",
+      "Segoe UI",
+      "Courier New",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G999B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.596.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Georgia",
+      "Verdana",
+      "Times New Roman",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.1585.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Georgia",
+      "Roboto",
+      "Courier New",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1920,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Tahoma",
+      "Courier New",
+      "Helvetica",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Tahoma",
+      "Verdana",
+      "Arial",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Helvetica",
+      "Roboto",
+      "Georgia",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6561.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 768,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Times New Roman",
+      "Tahoma",
+      "Verdana",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; SM-G973B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.3937.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1200,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Helvetica",
+      "Verdana",
+      "Arial",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Arial",
+      "Georgia",
+      "Courier New",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2405.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Arial",
+      "Segoe UI",
+      "Tahoma",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6068.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Verdana",
+      "Roboto",
+      "Helvetica",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Helvetica",
+      "Times New Roman",
+      "Courier New",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Arial",
+      "Helvetica",
+      "Tahoma",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.4914.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Arial",
+      "Roboto",
+      "Verdana",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G996B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.5923.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Tahoma",
+      "Segoe UI",
+      "Georgia",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; SM-G984B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.1835.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Segoe UI",
+      "Helvetica",
+      "Times New Roman",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 1200,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Times New Roman",
+      "Tahoma",
+      "Georgia",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.4644.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Helvetica",
+      "Georgia",
+      "Times New Roman",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.1585.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Verdana",
+      "Roboto",
+      "Helvetica",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1440,
+      "height": 768,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Courier New",
+      "Georgia",
+      "Tahoma",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 11.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6068.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 900,
+      "deviceScaleFactor": 2
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Roboto",
+      "Tahoma",
+      "Verdana",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2696.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Segoe UI",
+      "Courier New",
+      "Tahoma",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Courier New",
+      "Arial",
+      "Times New Roman",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2246.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Segoe UI",
+      "Georgia",
+      "Verdana",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6068.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Courier New",
+      "Georgia",
+      "Verdana",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.1285.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 6,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Georgia",
+      "Helvetica",
+      "Roboto",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2405.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Roboto",
+      "Segoe UI",
+      "Georgia",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; SM-G973B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.3114.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 768,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Verdana",
+      "Georgia",
+      "Times New Roman",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.3482.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Verdana",
+      "Arial",
+      "Roboto",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.3482.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Georgia",
+      "Times New Roman",
+      "Courier New",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6068.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 800,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Roboto",
+      "Arial",
+      "Verdana",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Georgia",
+      "Helvetica",
+      "Roboto",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Arial",
+      "Roboto",
+      "Times New Roman",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6561.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Tahoma",
+      "Times New Roman",
+      "Helvetica",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G988B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.685.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Tahoma",
+      "Times New Roman",
+      "Segoe UI",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2696.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Georgia",
+      "Segoe UI",
+      "Times New Roman",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G988B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.685.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Helvetica",
+      "Tahoma",
+      "Segoe UI",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.6464.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Tahoma",
+      "Times New Roman",
+      "Courier New",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.6475.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 800,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Verdana",
+      "Arial",
+      "Georgia",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6561.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 800,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Arial",
+      "Georgia",
+      "Tahoma",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2863.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Verdana",
+      "Roboto",
+      "Courier New",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G996B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.5923.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Times New Roman",
+      "Georgia",
+      "Tahoma",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.4914.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 800,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Segoe UI",
+      "Courier New",
+      "Verdana",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.1585.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Georgia",
+      "Tahoma",
+      "Helvetica",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2283.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Courier New",
+      "Segoe UI",
+      "Georgia",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6561.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Segoe UI",
+      "Times New Roman",
+      "Verdana",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6068.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1200,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Tahoma",
+      "Helvetica",
+      "Arial",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.3831.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 768,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Arial",
+      "Tahoma",
+      "Verdana",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0",
+    "viewport": {
+      "width": 1536,
+      "height": 1200,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Roboto",
+      "Courier New",
+      "Tahoma",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2283.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 800,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Roboto",
+      "Courier New",
+      "Arial",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; Pixel 8 Pro) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6068.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 2
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Segoe UI",
+      "Courier New",
+      "Verdana",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 768,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Helvetica",
+      "Courier New",
+      "Arial",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Verdana",
+      "Courier New",
+      "Georgia",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G988B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.685.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "deviceScaleFactor": 2
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Courier New",
+      "Verdana",
+      "Georgia",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G999B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.596.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Georgia",
+      "Courier New",
+      "Segoe UI",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Georgia",
+      "Verdana",
+      "Helvetica",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.3831.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Segoe UI",
+      "Tahoma",
+      "Roboto",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.3831.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Helvetica",
+      "Arial",
+      "Roboto",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6001.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Tahoma",
+      "Roboto",
+      "Verdana",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; SM-G973B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.3114.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Georgia",
+      "Roboto",
+      "Courier New",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.1103.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Courier New",
+      "Verdana",
+      "Segoe UI",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Roboto",
+      "Tahoma",
+      "Times New Roman",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 10; SM-G973B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.3937.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Courier New",
+      "Georgia",
+      "Times New Roman",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.3286.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1080,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Arial",
+      "Georgia",
+      "Segoe UI",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.2405.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Arial",
+      "Courier New",
+      "Roboto",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.5437.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Verdana",
+      "Helvetica",
+      "Times New Roman",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G976B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.1900.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Courier New",
+      "Arial",
+      "Tahoma",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.3286.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Helvetica",
+      "Times New Roman",
+      "Arial",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2863.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Segoe UI",
+      "Georgia",
+      "Arial",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2138.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 1200,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Courier New",
+      "Georgia",
+      "Segoe UI",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 900,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Verdana",
+      "Segoe UI",
+      "Tahoma",
+      "Roboto"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 16_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Georgia",
+      "Courier New",
+      "Verdana",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.2 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Roboto",
+      "Courier New",
+      "Helvetica",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.4644.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 800,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Verdana",
+      "Courier New",
+      "Georgia",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.6475.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Courier New",
+      "Times New Roman",
+      "Verdana",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.3066.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 800,
+      "deviceScaleFactor": 2
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Roboto",
+      "Georgia",
+      "Helvetica",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2863.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Roboto",
+      "Segoe UI",
+      "Tahoma",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1536,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Segoe UI",
+      "Helvetica",
+      "Times New Roman",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.3066.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 800,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Roboto",
+      "Verdana",
+      "Segoe UI",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2283.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Roboto",
+      "Helvetica",
+      "Tahoma",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.1 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Tahoma",
+      "Courier New",
+      "Verdana",
+      "Segoe UI"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Times New Roman",
+      "Tahoma",
+      "Roboto",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.3817.0 Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Tahoma",
+      "Verdana",
+      "Georgia",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G999B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.596.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 800,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Helvetica",
+      "Arial",
+      "Roboto",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 11; SM-G971B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.4169.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 1200,
+      "deviceScaleFactor": 1
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Helvetica",
+      "Tahoma",
+      "Verdana",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Brave/1.63.122 Chrome/119.0.6045.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1200,
+      "deviceScaleFactor": 2
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Tahoma",
+      "Verdana",
+      "Roboto",
+      "Helvetica"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4 Mobile/15E148 Safari/604.1",
+    "viewport": {
+      "width": 1600,
+      "height": 800,
+      "deviceScaleFactor": 2
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Courier New",
+      "Arial",
+      "Verdana",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.1103.0 Safari/537.36",
+    "viewport": {
+      "width": 1536,
+      "height": 800,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Verdana",
+      "Georgia",
+      "Arial",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6001.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1080,
+      "deviceScaleFactor": 2
+    },
+    "locale": "en-GB",
+    "timezone": "Europe/London",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Helvetica",
+      "Courier New",
+      "Times New Roman",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.2138.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 2,
+    "plugins_count": 3,
+    "fonts_sample": [
+      "Roboto",
+      "Arial",
+      "Segoe UI",
+      "Verdana"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.1972.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Roboto",
+      "Segoe UI",
+      "Georgia",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.6045.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 900,
+      "deviceScaleFactor": 1
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 4,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Georgia",
+      "Courier New",
+      "Helvetica",
+      "Tahoma"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G996B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.5923.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 1080,
+      "deviceScaleFactor": 3
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 6,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Roboto",
+      "Tahoma",
+      "Times New Roman",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 14; SM-G989B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.593.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "deviceScaleFactor": 2
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Courier New",
+      "Helvetica",
+      "Verdana",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.560.0 Safari/537.36",
+    "viewport": {
+      "width": 1440,
+      "height": 768,
+      "deviceScaleFactor": 1
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 6,
+    "plugins_count": 6,
+    "fonts_sample": [
+      "Helvetica",
+      "Verdana",
+      "Segoe UI",
+      "Times New Roman"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Linux; Android 13; SM-G996B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.5923.0 Mobile Safari/537.36",
+    "viewport": {
+      "width": 1366,
+      "height": 1200,
+      "deviceScaleFactor": 3
+    },
+    "locale": "pl-PL",
+    "timezone": "Europe/Warsaw",
+    "deviceMemory": 16,
+    "hardwareConcurrency": 2,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Verdana",
+      "Segoe UI",
+      "Arial",
+      "Georgia"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.6068.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 1200,
+      "deviceScaleFactor": 1
+    },
+    "locale": "de-DE",
+    "timezone": "Europe/Berlin",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 4,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Helvetica",
+      "Roboto",
+      "Tahoma",
+      "Courier New"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.3482.0 Safari/537.36",
+    "viewport": {
+      "width": 1600,
+      "height": 800,
+      "deviceScaleFactor": 3
+    },
+    "locale": "en-US",
+    "timezone": "America/New_York",
+    "deviceMemory": 4,
+    "hardwareConcurrency": 8,
+    "plugins_count": 5,
+    "fonts_sample": [
+      "Georgia",
+      "Segoe UI",
+      "Verdana",
+      "Arial"
+    ]
+  },
+  {
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.4644.0 Safari/537.36",
+    "viewport": {
+      "width": 1920,
+      "height": 900,
+      "deviceScaleFactor": 3
+    },
+    "locale": "cs-CZ",
+    "timezone": "Europe/Prague",
+    "deviceMemory": 8,
+    "hardwareConcurrency": 6,
+    "plugins_count": 4,
+    "fonts_sample": [
+      "Roboto",
+      "Segoe UI",
+      "Arial",
+      "Courier New"
+    ]
+  }
+]

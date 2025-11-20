@@ -1,0 +1,105 @@
+{
+  "manifest_version": 3,
+  "name": "Second Controller Bridge",
+  "version": "1.5.0",
+  "description": "WS bridge for 2nd-no.",
+  "permissions": [
+    "scripting",
+    "storage",
+    "tabs",
+    "webNavigation",
+    "clipboardWrite",
+    "clipboardRead",
+    "alarms",
+    "offscreen"
+  ],
+  "host_permissions": [
+    "https://2nd-no.com/*",
+    "*://2nd-no.com/*",
+    "*://*.2nd-no.com/*",
+    "*://accounts.google.com/*",
+    "ws://127.0.0.1/*",
+    "ws://localhost/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://2nd-no.com/*",
+        "https://www.2nd-no.com/*",
+        "http://2nd-no.com/*",
+        "http://www.2nd-no.com/*"
+      ],
+      "js": [
+        "content_script.js",
+        "content/legacy_copy_immediate.js",
+        "content/messages_auto_open.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://2nd-no.com/*",
+        "https://www.2nd-no.com/*",
+        "http://2nd-no.com/*",
+        "http://www.2nd-no.com/*"
+      ],
+      "js": [
+        "content_2no.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://accounts.google.com/*"
+      ],
+      "js": [
+        "content_google.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://2nd-no.com/*",
+        "https://www.2nd-no.com/*",
+        "http://2nd-no.com/*",
+        "http://www.2nd-no.com/*"
+      ],
+      "js": [
+        "content/numbers_autorun.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    },
+    {
+      "matches": [
+        "https://2nd-no.com/app/messages*",
+        "https://www.2nd-no.com/app/messages*",
+        "http://2nd-no.com/app/messages*",
+        "http://www.2nd-no.com/app/messages*"
+      ],
+      "js": [
+        "content/messages_cleanup.js"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "content/numbers_controller.js",
+        "content/thread_watcher.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "WS Bridge"
+  }
+}
