@@ -1147,6 +1147,10 @@ class App(tk.Tk):
                         self._bridge_server.on_external_code = self._handle_external_code_callback
                         self._bridge_server.append_log = self.append_log
                         self._ws_queue = lambda payload: queue_command(self._bridge_server, payload)
+                        try:
+                            self._bridge_server.start_login_watch()
+                        except Exception:
+                            pass
                     self.append_log(f"[bridge] WS запущен на порту {port}")
 
                     if self._bridge_server:
