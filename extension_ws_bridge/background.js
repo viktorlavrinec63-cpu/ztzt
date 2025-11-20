@@ -886,6 +886,14 @@ async function handle(cmd){
       try {
         const tabId = await open2noInNewTab(url, true);
         if (typeof tabId !== "number") throw new Error("tab_create_failed");
+
+        // NEW: сразу стартуем login-watch для активной вкладки 2nd-no
+        try {
+          startLoginWatch();
+        } catch (e) {
+          log("startLoginWatch from open_tab failed", e);
+        }
+
         send({ type: "result", of: "open_tab", ok: true, tabId });
       } catch (e) {
         send({ type: "result", of: "open_tab", ok: false, error: String(e) });
