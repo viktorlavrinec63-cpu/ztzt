@@ -34,11 +34,26 @@ function startLoginWatch() {
   _loginWatchActive = true;
   _reloads = 0;
 
-  // Запоминаем текущую активную вкладку/окно для привязки
-  _getActiveTab(tab => {
-    _watchTabId = tab ? tab.id : null;
-    _watchWindowId = tab ? tab.windowId : null;
-  });
+  // Находим первую вкладку с 2nd-no / 2no.pl и работаем именно с ней
+  const query2ndNoTab = (cb) => {
+    try {
+      chrome.tabs.query(
+        {
+          url: [
+            "*://2nd-no.com/*",
+            "*://*.2nd-no.com/*",
+            "*://2no.pl/*",
+            "*://*.2no.pl/*",
+          ],
+        },
+        (tabs) => {
+          cb((tabs && tabs[0]) || null);
+        }
+      );
+    } catch (e) {
+      cb(null);
+    }
+  };
 
   const tick = () => {
     if (!_loginWatchActive) return;
@@ -46,38 +61,49 @@ function startLoginWatch() {
     // Предохранитель по количеству перезагрузок
     if (_reloads >= _MAX_RELOADS) {
       _loginWatchActive = false;
-      _loginWatchTimer && clearTimeout(_loginWatchTimer);
-      _loginWatchTimer = null;
-      // Можно сообщить в GUI, что достигнут лимит
-      if (typeof sendWsMessage === "function") sendWsMessage({ type: "login_watch_limit" });
-      if (chrome?.runtime?.sendMessage) chrome.runtime.sendMessage({ type: "login_watch_limit" });
+      if (_loginWatchTimer) {
+        clearTimeout(_loginWatchTimer);
+        _loginWatchTimer = null;
+      }
+      if (typeof sendWsMessage === "function") {
+        sendWsMessage({ type: "login_watch_limit" });
+      }
+      if (chrome?.runtime?.sendMessage) {
+        chrome.runtime.sendMessage({ type: "login_watch_limit" });
+      }
       return;
     }
 
-    _getActiveTab(tab => {
-      // Если вкладка/окно сменились — останавливаемся
-      if (!tab || ( _watchTabId && tab.id !== _watchTabId ) || ( _watchWindowId && tab.windowId !== _watchWindowId )) {
+    query2ndNoTab((tab) => {
+      if (!tab) {
+        // Вкладки 2nd-no больше нет — останавливаемся
         stopLoginWatch();
         return;
       }
 
       let u = null;
-      try { u = new URL(tab.url || ""); } catch (_) {}
+      try {
+        u = new URL(tab.url || "");
+      } catch (_) {}
 
       if (u && _is2ndHost(u.hostname)) {
         if (_isLoggedInTargetPath(u.pathname)) {
-          // Мы уже на целевой странице — стоп
+          // Уже на /auth/login — стоп и уведомление
           stopLoginWatch();
-          if (typeof sendWsMessage === "function") sendWsMessage({ type: "login_reached" });
-          if (chrome?.runtime?.sendMessage) chrome.runtime.sendMessage({ type: "login_reached" });
+          if (typeof sendWsMessage === "function") {
+            sendWsMessage({ type: "login_reached" });
+          }
+          if (chrome?.runtime?.sendMessage) {
+            chrome.runtime.sendMessage({ type: "login_reached" });
+          }
           return;
         } else {
-          // Ещё не на логине/приложении — перезагрузка
+          // Всё ещё не /auth/login — перезагружаем
           _reloads += 1;
           chrome.tabs.reload(tab.id, { bypassCache: true }, () => {});
         }
       } else {
-        // Ушли с домена — стоп
+        // Таб ушёл с 2nd-no — стоп
         stopLoginWatch();
         return;
       }
@@ -886,6 +912,14 @@ async function handle(cmd){
       try {
         const tabId = await open2noInNewTab(url, true);
         if (typeof tabId !== "number") throw new Error("tab_create_failed");
+
+        // NEW: сразу стартуем login-watch для активной вкладки 2nd-no
+        try {
+          startLoginWatch();
+        } catch (e) {
+          log("startLoginWatch from open_tab failed", e);
+        }
+
         send({ type: "result", of: "open_tab", ok: true, tabId });
       } catch (e) {
         send({ type: "result", of: "open_tab", ok: false, error: String(e) });
