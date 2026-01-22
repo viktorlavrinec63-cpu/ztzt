@@ -1,8 +1,15 @@
 
 # main.py (v6) — keep same number until both countries succeed or "blocked"; retry on errors
 from __future__ import annotations
+import argparse
+import time
 from pathlib import Path
 import logging
+
+parser = argparse.ArgumentParser(add_help=False)
+parser.add_argument('--mode', choices=['cz_only', 'sk_only', 'cz_sk'], default='cz_sk')
+args, _ = parser.parse_known_args()
+mode = args.mode
 
 def _setup_logging_main():
     try:
@@ -116,7 +123,7 @@ def decide_sms_country(cfg: dict, domain_cc: str) -> str:
         cc = domain_cc.upper()
     return cc if cc in ("CZ","SK","PL","DE") else domain_cc
 
-def main():
+def main(mode_override: str | None = None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--runs", type=int, default=1)
     ap.add_argument("--headful", action="store_true")
@@ -124,7 +131,9 @@ def main():
     ap.add_argument("--proxies", default="proxies.txt")
     ap.add_argument("--profiles", default="profiles.json")
     ap.add_argument("--ws-mode", action="store_true", help="use extension WS bridge", default=False)
+    ap.add_argument('--mode', choices=['cz_only', 'sk_only', 'cz_sk'], default=mode)
     args = ap.parse_args()
+    run_mode = mode_override or args.mode
 
     cfg = load_config(args.config)
     proxies_raw = read_lines(args.proxies)
@@ -194,7 +203,12 @@ def main():
             print(f"[PROXY] CZ -> {proxy_for_pw_cz}")
             print(f"[PROXY] SK -> {proxy_for_pw_sk}")
             
-            domain_cc = 'CZ' if ((i % 2) == 1) else 'SK'  # alternate pairs: 1: CZ+SK, 2: SK+CZ, etc.
+            if run_mode == "cz_only":
+                domain_cc = "CZ"
+            elif run_mode == "sk_only":
+                domain_cc = "SK"
+            else:
+                domain_cc = 'CZ' if ((i % 2) == 1) else 'SK'  # alternate pairs: 1: CZ+SK, 2: SK+CZ, etc.
             pair_cc   = "SK" if domain_cc == "CZ" else "CZ"
             sms_cc    = decide_sms_country(cfg, domain_cc)       # PL/CZ/SK/DE
     
@@ -217,8 +231,8 @@ def main():
             cz_done = (domain_cc == "SK")  # если начинаем со SK, то CZ считается «второй»
             sk_done = (domain_cc == "CZ")  # это условие влияет только на порядок
             # точнее, будем хранить флаги успеха отдельно:
-            success_cz = False
-            success_sk = False
+            success_cz = run_mode == "sk_only"
+            success_sk = run_mode == "cz_only"
     
             country_ok = {"CZ": False, "SK": False}
             country_reason = {"CZ": "not-run", "SK": "not-run"}
@@ -274,7 +288,7 @@ def main():
                             continue    # идём на новый круг
     
                 # 2) Пауза и вторая страна только после успеха первой
-                if (domain_cc == "CZ" and success_cz and not success_sk) or (domain_cc == "SK" and success_sk and not success_cz):
+                if run_mode == "cz_sk" and ((domain_cc == "CZ" and success_cz and not success_sk) or (domain_cc == "SK" and success_sk and not success_cz)):
                     second = pair_cc
                     print('[pair] wait 40s before second country...')
                     time.sleep(delay_between)
@@ -431,5 +445,36 @@ def main():
 
     print("\\nГотово. Cookies — в ./BazosCookies/<Чехия|Словакия>")
 
+def register_cz():
+    # TODO: тут логика регистрации Чехии
+    print("Регистрация Чехии")
+    main(mode_override="cz_only")
+    return True
+
+def register_sk():
+    # TODO: тут логика регистрации Словакии
+    print("Регистрация Словакии")
+    main(mode_override="sk_only")
+    return True
+
+def final_cleanup():
+    # TODO: тут очистка номера, закрытие процессов и т.п.
+    print("Финальная очистка и завершение")
+    return
+
 if __name__ == "__main__":
-    main()
+    if mode == "cz_only":
+        if register_cz():
+            final_cleanup()
+        raise SystemExit(0)
+
+    if mode == "sk_only":
+        if register_sk():
+            final_cleanup()
+        raise SystemExit(0)
+
+    if register_cz():
+        time.sleep(120)
+        register_sk()
+
+    final_cleanup()

@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
-import os, time, subprocess
+import os, time
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
+import subprocess
 import requests, psutil
 
 DEFAULT_PORT=8767
@@ -85,6 +86,7 @@ class Launcher(tk.Tk):
         self.var_runs = tk.IntVar(value=DEFAULT_RUNS)
         self.var_temp = tk.BooleanVar(value=True)
         self.var_portable = tk.BooleanVar(value=True)
+        self.mode_var = tk.StringVar(value="cz_sk")
         frm=ttk.Frame(self,padding=12); frm.pack(fill="both",expand=True)
         r=0
         ttk.Label(frm,text="Путь к run.bat:").grid(column=0,row=r,sticky="w")
@@ -95,9 +97,16 @@ class Launcher(tk.Tk):
         ttk.Label(frm,text="Количество запусков:").grid(column=0,row=r,sticky="w"); ttk.Entry(frm,textvariable=self.var_runs,width=10).grid(column=1,row=r,sticky="w"); r+=1
         ttk.Checkbutton(frm,text="Показывать временный браузер (регистрация Bazos)",variable=self.var_temp).grid(column=0,row=r,columnspan=3,sticky="w",pady=(6,0)); r+=1
         ttk.Checkbutton(frm,text="Показывать портативный браузер 2nd-no",variable=self.var_portable).grid(column=0,row=r,columnspan=3,sticky="w"); r+=1
+        mode_frame = ttk.Frame(frm)
+        mode_frame.grid(column=0, row=r, columnspan=3, sticky="w", pady=(10, 0))
+        ttk.Label(mode_frame, text="Режим регистрации:").pack(pady=5)
+        ttk.Radiobutton(mode_frame, text="Только Чехия", variable=self.mode_var, value="cz_only").pack(anchor="w")
+        ttk.Radiobutton(mode_frame, text="Только Словакия", variable=self.mode_var, value="sk_only").pack(anchor="w")
+        ttk.Radiobutton(mode_frame, text="Чехия → Словакия", variable=self.mode_var, value="cz_sk").pack(anchor="w")
+        r+=1
         self.txt=tk.Text(frm,height=12); self.txt.grid(column=0,row=r,columnspan=3,sticky="nsew",pady=(10,0)); frm.rowconfigure(r,weight=1); r+=1
         btns=ttk.Frame(frm); btns.grid(column=0,row=r,columnspan=3,sticky="e",pady=(10,0))
-        self.bstart=ttk.Button(btns,text="Старт",command=self.start); self.bstart.grid(column=0,row=0,padx=5)
+        self.bstart=ttk.Button(btns,text="Старт",command=self.start_main); self.bstart.grid(column=0,row=0,padx=5)
         self.bstop=ttk.Button(btns,text="Стоп",command=self.stop,state="disabled"); self.bstop.grid(column=1,row=0,padx=5)
         self.proc=None; self.stop_flag=False
 
@@ -193,6 +202,11 @@ class Launcher(tk.Tk):
             stop_evt.set()
             self.log("Основной софт завершился."); time.sleep(2)
         self.bstart.configure(state="normal"); self.bstop.configure(state="disabled"); self.log("Готово."); self.proc=None
+
+    def start_main(self):
+        mode = self.mode_var.get()
+        main_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+        subprocess.Popen(["python", "main.py", "--mode", mode], cwd=main_path)
 
     def _kill_proc(self):
         try:
