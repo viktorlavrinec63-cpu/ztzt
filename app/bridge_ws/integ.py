@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 import subprocess
 import threading
 import re
@@ -444,7 +445,7 @@ def find_portable_chrome(base_dir: Path) -> Optional[Path]:
 
 def start_bridge_and_open(base_dir: str | Path, ext_rel: str = "extension_ws_bridge",
                           profile_rel: str = "app/chrome_profile", ws_port: int = 8765,
-                          url: str = "https://2nd-no.com/") -> BridgeServer:
+                          url: str = "https://2nd-no.com/", proxy_server: str | None = None) -> BridgeServer:
     base = Path(base_dir).resolve()
     chrome = find_portable_chrome(base)
     if not chrome:
@@ -465,6 +466,20 @@ def start_bridge_and_open(base_dir: str | Path, ext_rel: str = "extension_ws_bri
         "--no-default-browser-check",
         "--disable-extensions-file-access-check",
     ]
+
+    proxy = (proxy_server or os.environ.get("CHROME_PROXY_SERVER", "") or "").strip()
+    if proxy:
+        if "@" in proxy:
+            log(f"[CHROME] proxy rejected (auth not allowed): {proxy}")
+        else:
+            if "://" not in proxy:
+                proxy = "http://" + proxy
+            args.append(f"--proxy-server={proxy}")
+            args.append("--proxy-bypass-list=<-loopback>")
+            log(f"[CHROME] proxy enabled: {proxy}")
+    else:
+        log("[CHROME] proxy disabled")
+
     subprocess.Popen(args)
 
     async def boot() -> None:

@@ -1,0 +1,2 @@
+http://user:pass@cz-proxy1.example.com:8000
+http://user:pass@cz-proxy2.example.com:8001

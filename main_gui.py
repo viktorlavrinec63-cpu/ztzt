@@ -51,6 +51,7 @@ DEFAULTS = {
     "proxies": "proxies.txt",
     "profiles": "profiles.json",
     "ws_port": 8765,
+    "chrome_proxy": "",
 }
 
 def load_json(path, fallback):
@@ -77,6 +78,7 @@ class App(tk.Tk):
         self.proxies_path = tk.StringVar(value=DEFAULTS["proxies"])
         self.profiles_path = tk.StringVar(value=DEFAULTS["profiles"])
         self.ws_port = tk.IntVar(value=DEFAULTS["ws_port"])
+        self.chrome_proxy = tk.StringVar(value=os.environ.get("CHROME_PROXY_SERVER","") or DEFAULTS["chrome_proxy"])
         self.ws_mode = tk.BooleanVar(value=True)
         self._ws_started = False
         self._bridge_server = None
@@ -187,6 +189,10 @@ class App(tk.Tk):
 
         ttk.Label(frm, text="WS порт:").grid(row=row, column=0, sticky="w", **pad)
         ttk.Spinbox(frm, from_=1024, to=65535, textvariable=self.ws_port, width=10).grid(row=row, column=1, sticky="w", **pad)
+        row += 1
+
+        ttk.Label(frm, text="Chrome proxy (без логина) [host:port / http:// / socks5://]:").grid(row=row, column=0, sticky="w", **pad)
+        ttk.Entry(frm, textvariable=self.chrome_proxy, width=56).grid(row=row, column=1, columnspan=3, sticky="we", **pad)
         row += 1
 
         ttk.Label(frm, text="config.json:").grid(row=row, column=0, sticky="w", **pad)
@@ -1126,20 +1132,16 @@ class App(tk.Tk):
         self._run_finished = False
         self._cycle_active = False
         self._arm_run_watchdog()
-        # === Auto-login to 2nd-no via WS bridge ===
-        try:
-            print("[AUTOLOGIN] run pipeline to open 2nd-no and click Google")
-            from app.bridge_ws.autologin import auto_login_google
-            asyncio.run(auto_login_google())
-        except Exception as _e:
-            print("[AUTOLOGIN] skipped or failed:", _e)
-        # === end autologin ===
         try:
             # сохраняем настройки провайдера перед запуском
             self.save_provider(silent=True)
 
             base_dir = Path(__file__).resolve().parent
             py = sys.executable or "python"
+
+            proxy_ui = (self.chrome_proxy.get() or "").strip()
+            if proxy_ui:
+                os.environ["CHROME_PROXY_SERVER"] = proxy_ui
 
             # 1) WS мост + открытие 2nd-no — только при первом клике Start
             if self.ws_mode.get() and not self._ws_started:
@@ -1149,7 +1151,7 @@ class App(tk.Tk):
                 try:
                     port = int(self.ws_port.get() or 8765)
                     self._numbers_page_ready.clear()
-                    self._bridge_server = start_bridge_and_open(base_dir='.', ws_port=port, url='https://2nd-no.com/')
+                    self._bridge_server = start_bridge_and_open(base_dir='.', ws_port=port, url='https://2nd-no.com/', proxy_server=proxy_ui or None)
                     self._ws_started = True
                     if self._bridge_server:
                         self._bridge_server.on_external_code = self._handle_external_code_callback
@@ -1164,19 +1166,6 @@ class App(tk.Tk):
                     if self._bridge_server:
                         self._ensure_events_thread()
 
-                    # Автоклик по кнопке "Login with Google"
-                    try:
-                        if self._ws_queue:
-                            self._ws_queue({"type":"run_js","code":'(function autoClickGoogle(){\n  function byText(tag, text){\n    var els = Array.from(document.querySelectorAll(tag));\n    return els.find(e => (e.textContent||\'\').trim().toLowerCase() === text.toLowerCase());\n  }\n  var btn = byText(\'button\',\'Login with Google\');\n  if(!btn){\n    try{\n      var xp = document.evaluate("//button[contains(., \'Login with Google\')]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;\n      if(xp) btn = xp;\n    }catch(e){}\n  }\n  if(!btn){\n    var labels = Array.from(document.querySelectorAll(\'button, .button, .btn\')).filter(b=>/login with google/i.test(b.textContent||\'\'));\n    if(labels.length) btn = labels[0];\n  }\n  if(btn){ btn.click(); return \'clicked\'; }\n  setTimeout(autoClickGoogle, 600);\n  return \'waiting\';\n})();'})
-                            self.append_log("[bridge] queued run_js: click Google")
-                    except Exception as e:
-                        try:
-                            if self._ws_queue:
-                                self._ws_queue({"type":"eval","code":'(function autoClickGoogle(){\n  function byText(tag, text){\n    var els = Array.from(document.querySelectorAll(tag));\n    return els.find(e => (e.textContent||\'\').trim().toLowerCase() === text.toLowerCase());\n  }\n  var btn = byText(\'button\',\'Login with Google\');\n  if(!btn){\n    try{\n      var xp = document.evaluate("//button[contains(., \'Login with Google\')]", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;\n      if(xp) btn = xp;\n    }catch(e){}\n  }\n  if(!btn){\n    var labels = Array.from(document.querySelectorAll(\'button, .button, .btn\')).filter(b=>/login with google/i.test(b.textContent||\'\'));\n    if(labels.length) btn = labels[0];\n  }\n  if(btn){ btn.click(); return \'clicked\'; }\n  setTimeout(autoClickGoogle, 600);\n  return \'waiting\';\n})();'})
-                                self.append_log("[bridge] queued eval: click Google")
-                        except Exception as e2:
-                            self.append_log(f"[bridge] cannot queue click: {e2}")
-
                 except Exception as e:
                     self.append_log(f"[bridge error] {e}")
 
@@ -1185,15 +1174,6 @@ class App(tk.Tk):
                     reset_cycle(self._bridge_server)
                 except Exception as exc:
                     self.append_log(f"[bridge] reset_cycle error: {exc}")
-                try:
-                    open_2no_and_login(self._bridge_server)
-                except Exception as exc:
-                    self.append_log(f"[bridge] open_2no_and_login error: {exc}")
-                else:
-                    try:
-                        self._bridge_server.start_login_watch()
-                    except Exception:
-                        pass
 
             # 2) Запускаем main.py, если он есть
             main_py = base_dir / "main.py"
